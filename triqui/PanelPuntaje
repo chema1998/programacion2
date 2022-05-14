@@ -1,0 +1,14 @@
+package com.usc.ui;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+public class PanelPuntaje extends JPanel {
+    JLabel textoPuntaje;
+    public PanelPuntaje(){
+        
+        textoPuntaje=new JLabel("Aquí va el puntaje");
+        add(textoPuntaje);
+}
+}
