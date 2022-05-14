@@ -1,5 +1,6 @@
 package com.usc.ui;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JFrame;
 
@@ -10,26 +11,35 @@ public class VentanaPrincipal extends JFrame {
     PanelTablero TableroTriqui;
     PanelPuntaje PuntajeTriqui;
     
-    public static void main(String[] args){
-
-     VentanaPrincipal miventana=new VentanaPrincipal();   
-       miventana.setVisible(true);
-        
-}
+   
    public VentanaPrincipal(){
       this.setTitle("Mi primera aplicacion con UI");
       this.setBackground(Color.black);
       this.setSize(800,600);
       this.setResizable(false);
       
+      
+      
+      
+      this.setLayout(new BorderLayout());
+      
       LogoTriqui = new PanelLogo();
-      this.add(LogoTriqui);
+      this.add(LogoTriqui, BorderLayout.NORTH);
       
       TableroTriqui=new PanelTablero();
-      this.add(TableroTriqui);
+      this.add(TableroTriqui,BorderLayout.CENTER);
       
       PuntajeTriqui=new PanelPuntaje();
-      this.add(PuntajeTriqui);
+      this.add(PuntajeTriqui,BorderLayout.EAST);
+      
+      
+      
    } 
     
+    public static void main(String[] args){
+
+     VentanaPrincipal miventana=new VentanaPrincipal();   
+       miventana.setVisible(true);
+        
+    }
 }
