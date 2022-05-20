@@ -1,45 +1,24 @@
 package com.usc.ui;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import javax.swing.JFrame;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 
-public class VentanaPrincipal extends JFrame {
+public class PanelTablero extends JPanel {
     
-    PanelLogo LogoTriqui;
-    PanelTablero TableroTriqui;
-    PanelPuntaje PuntajeTriqui;
-    
-   
-   public VentanaPrincipal(){
-      this.setTitle("Mi primera aplicacion con UI");
-      this.setBackground(Color.black);
-      this.setSize(800,600);
-      this.setResizable(false);
-      
-      
-      
-      
-      this.setLayout(new BorderLayout());
-      
-      LogoTriqui = new PanelLogo();
-      this.add(LogoTriqui, BorderLayout.NORTH);
-      
-      TableroTriqui=new PanelTablero();
-      this.add(TableroTriqui,BorderLayout.CENTER);
-      
-      PuntajeTriqui=new PanelPuntaje();
-      this.add(PuntajeTriqui,BorderLayout.EAST);
-      
-      
-      
-   } 
-    
-    public static void main(String[] args){
-
-     VentanaPrincipal miventana=new VentanaPrincipal();   
-       miventana.setVisible(true);
+    JLabel textoTablero;
+    public PanelTablero(){
         
+       
+        setLayout(new GridLayout(3,3));
+        //textoTablero=new JLabel("tablero");
+        //add(textoTablero);
+        for (int i=0;i<9;i++){
+        add(new JButton());
+        }
+       
     }
 }
