@@ -1,0 +1,16 @@
+{
+    "imagenes": [
+      {
+        "titulo": "Título de la Imagen 1",
+        "descripcion": "Descripción de la imagen 1.",
+        "url": "https://cdn.shopify.com/s/files/1/0608/7819/2888/files/ducati-panigale-2023.jpg?v=1674124748"
+      },
+      {
+        "titulo": "Título de la Imagen 2",
+        "descripcion": "Descripción de la imagen 2.",
+        "url": "imagenes/imagen2.jpg"
+      }
+      
+    ]
+  }
+  
